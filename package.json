@@ -1,7 +1,7 @@
 {
   "name": "temp-mail-10mincom",
   "version": "1.0.0",
-  "description": "temp-mail-10mincom deployed on Render",
+  "description": "Temp Mail 10 Min with simple homepage",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

@@ -3,16 +3,8 @@ const app = express();
 
 app.use(express.json());
 
-// Homepage
-app.get("/", (req, res) => {
-  res.send("📧 Temp Mail 10 Min Service is live 24/7 on Render (and runs on 5000 locally)!");
-});
-
-// Health check
-app.get("/health", (req, res) => {
-  res.json({ status: "ok", uptime: process.uptime(), timestamp: new Date() });
-});
-
+// ✅ Serve homepage and static files
+app.use(express.static("public"));
 
 // Example route: generate temp email
 app.get("/new-email", (req, res) => {
@@ -25,10 +17,13 @@ app.get("/inbox", (req, res) => {
   res.json({ messages: ["Welcome to Temp Mail!"] });
 });
 
+// Health check
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", uptime: process.uptime(), timestamp: new Date() });
+});
 
-// ✅ Best setup: use Render's port if available, otherwise 5000 locally
+// ✅ Use Render's port or 5000 locally
 const PORT = process.env.PORT || 5000;
-
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(`✅ Temp Mail app running on http://localhost:${PORT}`);
 });
