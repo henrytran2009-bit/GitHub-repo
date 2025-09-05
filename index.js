@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-// ✅ Serve homepage and static files
+// ✅ Serve homepage and static files from /public
 app.use(express.static("public"));
 
 // API route: generate temp email
