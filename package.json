@@ -1,7 +1,7 @@
 {
-  "name": "render-test-app",
+  "name": "temp-mail-10mincom",
   "version": "1.0.0",
-  "description": "Minimal Express app to test Render deployment",
+  "description": "temp-mail-10mincom deployed on Render",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
