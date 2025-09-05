@@ -1,7 +1,7 @@
 {
-  "name": "temp-mail-ultra-minimal",
+  "name": "render-homepage-guaranteed",
   "version": "1.0.0",
-  "description": "Ultra minimal Express app with homepage",
+  "description": "Minimal Express app with guaranteed working homepage",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
