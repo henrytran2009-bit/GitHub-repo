@@ -1,7 +1,7 @@
 {
-  "name": "temp-mail-10mincom",
+  "name": "temp-mail-ultra-minimal",
   "version": "1.0.0",
-  "description": "Temp Mail 10 Min with homepage",
+  "description": "Ultra minimal Express app with homepage",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
